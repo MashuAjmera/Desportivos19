@@ -10,8 +10,8 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg fixed-top">
-            <a class="navbar-brand" href="assets/images/logowhite.png" data-size="816x1412">
-            <img src="assets/images/logowhite.png" width="40" alt="Desportivos" id="logowhite">
+            <a class="navbar-brand" href="assets/images/logo.png" data-size="816x1412">
+            <img src="assets/images/logowhite.png" width="40" alt="Desportivos" id="toggle">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -19,29 +19,29 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link btn-2" href="#"><span>Home</span> <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link btn-2" href="#"><span>About</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Events</a>
+                        <a class="nav-link btn-2" href="#"><span>Events</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
+                        <a class="nav-link btn-2" href="#"><span>Gallery</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sponsors</a>
+                        <a class="nav-link btn-2" href="#"><span>Sponsors</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link btn-2" href="#"><span>Contact</span></a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <div class="container" id="main-content">
+        <div class="container-fluid" id="main-content">
             <div class="">
-                <h1>Home</h1>
+                <a href="http://www.thismanslife.co.uk" target="_blank" id="home">Desportivos</a>
             </div>
             <div class="">
                 <h1>About Us</h1>
@@ -59,9 +59,11 @@
             <div class="">
                 <h1>Contact Us</h1>
             </div>
+
+
         </div>
         <nav class="navbar fixed-bottom">
-            <a class="nav-link nav-item" href="#">180 days to go</a>
+            <a class="nav-link nav-item" href="#" style="color: rgb(255, 255, 255)">180 days to go</a>
             <ul class="social-network social-circle">
                 <li><a href="https://www.facebook.com/Desportivos.LNMIIT/" class="icoFacebook" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href="https://twitter.com/DesportivosLNM" class="icoTwitter" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a></li>
@@ -69,6 +71,20 @@
                 <li><a href="https://www.instagram.com/desportivos.lnmiit/" class="icoLinkedin" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
             </ul>
         </nav>
+
+        <script type="text/javascript">
+        const logo = document.querySelector('.navbar-brand');
+    const navbar = document.querySelector('.navbar').addEventListener('mouseover', function(e) {
+        if(e.target.id === 'toggle') {
+            logo.innerHTML = '';
+            logo.innerHTML = `<img src="assets/images/logo.png" id="toggle" width="40" alt="Logo">`;
+        } else {
+            logo.innerHTML = '';
+            logo.innerHTML = `<img src="assets/images/logowhite.png" id="toggle" width="40" alt="Logo">`;
+        }
+        // console.log(e.target.id);
+    });
+        </script>
         <!-- <div id="background"></div> -->
         <script src="assets/js/sketch.min.js"></script>
         <script src="assets/js/background.js"></script>
