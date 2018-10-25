@@ -58,7 +58,7 @@
         var pool = [];
 
         var demo = Sketch.create({
-            container: document.getElementById( 'container' ),
+            container: document.getElementById( 'background' ),
             retina: 'auto'
         });
 
