@@ -33,6 +33,7 @@ html, body {
         overflow: hidden;
         margin: 0;
 }
+
 /* footer social icons */
 .social-network {
 	list-style: none;
@@ -100,4 +101,13 @@ a.socialIcon:hover, .socialHoverClass {
 	-o-transition: all 0.8s;
 	-ms-transition: all 0.8s;
 	transition: all 0.8s;
+}
+
+
+/* main content */
+#main-content{
+    position: absolute;
+    pointer-events: none;
+    top: 100px;
+    bottom: 30px;
 }
