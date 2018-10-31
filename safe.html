@@ -20,22 +20,22 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link btn-2" href="#" onclick="openp('home')"><span>Home</span> <span class="sr-only">(current)</span></a>
+                        <a class="nav-link btn-2" href="#" onclick="openhome()"><span>Home</span> <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn-2" href="#" onclick="openp('about')"><span>About</span></a>
+                        <a class="nav-link btn-2" href="#" onclick="openabout()"><span>About</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn-2" href="#" onclick="openp('events')"><span>Events</span></a>
+                        <a class="nav-link btn-2" href="#" onclick="openevents()"><span>Events</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn-2" href="#" onclick="openp('gallery')"><span>Gallery</span></a>
+                        <a class="nav-link btn-2" href="#" onclick="opengallery()"><span>Gallery</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn-2" href="#" onclick="openp('sponsors')"><span>Sponsors</span></a>
+                        <a class="nav-link btn-2" href="#" onclick="opensponsors()"><span>Sponsors</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn-2" href="#" onclick="openp('contact')"><span>Contact</span></a>
+                        <a class="nav-link btn-2" href="#" onclick="opencontact()"><span>Contact</span></a>
                     </li>
                 </ul>
             </div>
@@ -87,14 +87,60 @@
     });
         </script>
         <script type="text/javascript">
-            function openp(pglnk){
-            document.getElementById("home").style.display="none";
-            document.getElementById("about").style.display="none";
-            document.getElementById("events").style.display="none";
-            document.getElementById("gallery").style.display="none";
-            document.getElementById("sponsors").style.display="none";
-            document.getElementById("contact").style.display="none";
-            document.getElementById(pglnk).style.display="block";
+            var h = document.getElementById("home");
+            var a = document.getElementById("about");
+            var e = document.getElementById("events");
+            var g = document.getElementById("gallery");
+            var s = document.getElementById("sponsors");
+            var c = document.getElementById("contact");
+            var f=0;
+            function openhome(){
+                h.style.display="block";
+                a.style.display="none";
+                e.style.display="none";
+                g.style.display="none";
+                s.style.display="none";
+                c.style.display="none";
+            }
+            function openabout(){
+                h.style.display="none";
+                a.style.display="block";
+                e.style.display="none";
+                g.style.display="none";
+                s.style.display="none";
+                c.style.display="none";
+            }
+            function openevents(){
+                h.style.display="none";
+                a.style.display="none";
+                e.style.display="block";
+                g.style.display="none";
+                s.style.display="none";
+                c.style.display="none";
+            }
+            function opengallery(){
+                h.style.display="none";
+                a.style.display="none";
+                e.style.display="none";
+                g.style.display="block";
+                s.style.display="none";
+                c.style.display="none";
+            }
+            function opensponsors(){
+                h.style.display="none";
+                a.style.display="none";
+                e.style.display="none";
+                g.style.display="none";
+                s.style.display="block";
+                c.style.display="none";
+            }
+            function opencontact(){
+                h.style.display="none";
+                a.style.display="none";
+                e.style.display="none";
+                g.style.display="none";
+                s.style.display="none";
+                c.style.display="block";
             }
         </script>
         <script>

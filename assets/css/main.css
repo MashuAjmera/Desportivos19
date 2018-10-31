@@ -110,21 +110,16 @@ a.socialIcon:hover, .socialHoverClass {
     pointer-events: none;
     top: 100px;
     bottom: 30px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
 }
 
-/* nav byuttons */
+/* nav buttons start */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-body{
-  display: table;
-}
-.container{
-  vertical-align: middle;
-  text-align: center;
-  height: 100vh;
 }
 .btn-2{
   display: inline-block;
@@ -239,6 +234,27 @@ span::before, span::after{
 #home:after {
   border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
   box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+
+/* hide */
+#about {
+  display: none;
+}
+
+#events {
+  display: none;
+}
+
+#gallery {
+  display: none;
+}
+
+#sponsors {
+  display: none;
+}
+
+#contact {
+  display: none;
 }
 
 /* home caption */
