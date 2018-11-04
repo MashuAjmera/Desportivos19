@@ -11,7 +11,7 @@
     </head>
     <body>
         <div class="container-fluid" style="pointer-events: none;">
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top" style="pointer-events: auto;">
             <a class="navbar-brand" href="assets/images/logo.png" data-size="816x1412" style="pointer-events: auto;">
             <img src="assets/images/logowhite.png" width="40" alt="Desportivos" id="toggle">
             </a>
@@ -19,7 +19,7 @@
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0" style="pointer-events: auto;">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
                         <a class="nav-link btn-2" href="#" onclick="openp('home')"><span>Home</span></a>
                     </li>
@@ -47,7 +47,7 @@
                 <a href="#" target="_blank" id="home">Desportivos</a>
             </div>
             <div class="" id="about">
-                <h1 class="display-1">About Us</h1>
+                <h1 class="">About Us</h1>
                 <p class="lead">Desportivos, the largest sports meet of Rajasthan, is an international arena for students from across the country and abroad to showcase their talents and facilitate cross-cultural learning experiences. The fest aims its students to appreciate the unity and diversity that our culture offers and develop a spirit for sports. Desportivos '17 will span over a period of three days that would see a multitude of academic and technical students remodel into sports fanatics. Enthusiasm and sportsman spirit are the key elements that make Desportivos an enthralling experience.</p>
             </div>
             <div class="" id="events">
@@ -57,7 +57,7 @@
                             <li>
                                 <div class="image_title">
                                     <a href="https://www.youtube.com/channel/UCXTfDJ60DBmA932Du6B1ydg" target="_blank">Basketball</a>
-                                </div> 
+                                </div>
                                 <a href="https://www.youtube.com/channel/UCXTfDJ60DBmA932Du6B1ydg" target="_blank">
                                     <img src="assets/images/badminton.jpg"/>
                                 </a>
@@ -154,8 +154,8 @@
                     </div>
             </div>
             <div class="" id="gallery">
-                <h1 class="display-1">Look Back</h1>
-                <h1 class="display-4 text-muted">#2k18</h1>
+                <h1 class="">Look Back</h1>
+                <h1 class="text-muted">#2k18</h1>
                 <div class="row">
                     <div class="col-md-6">
                             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="pointer-events: auto;">
@@ -243,10 +243,10 @@
                 <h1 class="display-1">Our Sponsors</h1>
             </div>
             <div class="" id="contact">
-                <h1 class="display-1">Contact Us</h1>
+                <h1 class="">Contact Us</h1>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-3 col-6">
                             <div class="our-team" style="pointer-events: auto;">
                                 <div class="pic">
                                     <img src="assets/images/profile.jpg">
@@ -265,8 +265,7 @@
                                 </div>
                             </div>
                         </div>
-                 
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-3 col-6">
                             <div class="our-team" style="pointer-events: auto;">
                                 <div class="pic">
                                     <img src="assets/images/profile.jpg">
@@ -285,7 +284,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-3 col-6">
                             <div class="our-team" style="pointer-events: auto;">
                                 <div class="pic">
                                     <img src="assets/images/profile.jpg">
@@ -304,7 +303,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-3 col-6">
                             <div class="our-team" style="pointer-events: auto;">
                                 <div class="pic">
                                     <img src="assets/images/profile.jpg">
@@ -366,22 +365,22 @@
                 var end = new Date('01/25/2019');
                     var _day = 1000 * 60 * 60 * 24;
                     var timer;
-                
+
                     function showRemaining() {
                         var now = new Date();
                         var distance = end - now;
                         if (distance < 0) {
-                
+
                             clearInterval(timer);
                             document.getElementById('countdown').innerHTML = 'You are here';
-                
+
                             return;
                         }
                         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                
+
                         document.getElementById('countdown').innerHTML = days + ' days to go';
                     }
-                
+
                     timer = setInterval(showRemaining, 1000);
                 </script>
         <!-- <div id="background"></div> -->
