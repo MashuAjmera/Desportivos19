@@ -16,6 +16,7 @@ function openp(pglnk) {
     document.getElementById("gallery").style.display = "none";
     document.getElementById("sponsors").style.display = "none";
     document.getElementById("contact").style.display = "none";
+    document.getElementById("reach").style.display = "none";
     document.getElementById(pglnk).style.display = "block";
 }
 
@@ -37,3 +38,30 @@ function showRemaining() {
     document.getElementById('countdown').innerHTML = days + ' days to go';
 }
 timer = setInterval(showRemaining, 1000);
+
+var value1 = 0;
+function countevent() {
+  if (value1 < 20) {
+    value1 += 1;
+  }
+ document.getElementById('counter1').innerHTML = value1+"+";
+ setInterval(countevent, 10);
+}
+
+var value2 = 0;
+function countfootfall() {
+  if (value2 < 2000) {
+    value2 += 10;
+  }
+ document.getElementById('counter2').innerHTML = value2+"+";
+ setInterval(countfootfall, 100);
+}
+
+var value3 = 0;
+function countcolleges() {
+  if (value3 < 200) {
+    value3 += 1;
+  }
+ document.getElementById('counter3').innerHTML = value3+"+";
+ setInterval(countcolleges, 100);
+}
