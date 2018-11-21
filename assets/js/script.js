@@ -39,29 +39,31 @@ function showRemaining() {
 }
 timer = setInterval(showRemaining, 1000);
 
-var value1 = 0;
-function countevent() {
-  if (value1 < 20) {
-    value1 += 1;
-  }
- document.getElementById('counter1').innerHTML = value1+"+";
- setInterval(countevent, 10);
-}
+
 
 var value2 = 0;
 function countfootfall() {
   if (value2 < 2000) {
-    value2 += 10;
+    value2 += 5;
   }
- document.getElementById('counter2').innerHTML = value2+"+";
- setInterval(countfootfall, 100);
+ document.getElementById('counterfootfall').innerHTML = value2+"+";
+ setTimeout(countfootfall, 1);
 }
 
 var value3 = 0;
 function countcolleges() {
   if (value3 < 200) {
     value3 += 1;
+    document.getElementById('countercolleges').innerHTML = value3+"+";
   }
- document.getElementById('counter3').innerHTML = value3+"+";
- setInterval(countcolleges, 100);
+ setTimeout(countcolleges, 10);
+}
+
+var value1 = 0;
+function countevent() {
+  if (value1 < 20) {
+    value1 += 1;
+    document.getElementById('counterevents').innerHTML = value1+"+";
+  }
+setTimeout(countevent, 100);
 }
