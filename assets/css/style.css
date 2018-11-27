@@ -35,6 +35,7 @@
     line-height:50px;
     text-align: center;
   }
+}
 
 /* home */
 @keyframes tipsy {
@@ -263,7 +264,7 @@ font-size: 16px;
 }
 
 html, body {
-background: rgb(0,0,0,0.8);
+/* background-color: set in bootstrap.css; */
 overflow: hidden;
 margin: 0;
 }
@@ -275,7 +276,6 @@ margin: 0;
   bottom: 30px;
   padding-left: 5vw;
   padding-right: 5vw;
-
 }
 
 /* nav buttons start */

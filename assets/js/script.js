@@ -49,7 +49,6 @@ function countfootfall() {
  document.getElementById('counterfootfall').innerHTML = value2+"+";
  setTimeout(countfootfall, 1);
 }
-
 var value3 = 0;
 function countcolleges() {
   if (value3 < 200) {
@@ -58,7 +57,6 @@ function countcolleges() {
   }
  setTimeout(countcolleges, 10);
 }
-
 var value1 = 0;
 function countevent() {
   if (value1 < 20) {
