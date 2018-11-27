@@ -1,4 +1,4 @@
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
   .social-circle li a {
     width: 30px;
     height: 30px;
@@ -16,8 +16,13 @@
     font-size: 1rem;
     font-weight: 300;
   }
+  .multab{
+    overflow: auto;
+    height:60vh;
+    pointer-events: auto;
+  }
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 640px) {
   .social-circle li a {
     display:inline-block;
     position:relative;
@@ -34,6 +39,11 @@
     margin:0;
     line-height:50px;
     text-align: center;
+  }
+  .multab{
+    overflow: auto;
+    height:60vh;
+    pointer-events: none;
   }
 }
 
@@ -402,13 +412,14 @@ position: relative;
 --Nhexa: 4;
 --gap: 1.5vw;
 --size: calc(calc(100vw / var(--Nhexa)) - var(--gap));
+padding-right: calc(var(--size) * .5);
 }
-
+/* 
 @media only screen and (min-width: 1100px) {
 .galpic {
   --Nhexa: 6;
 }
-}
+} */
 
 @media only screen and (max-width: 600px) {
 .galpic {
@@ -416,11 +427,11 @@ position: relative;
 }
 .galpic {
   margin-right: calc(var(--size) * .3);
+  padding-right: calc(var(--size) * 2.5);
 }
 }
 
 .galpic {
-padding-right: calc(var(--size) * .5);
 overflow-X: hidden;
 hyphens: auto;
 overflow-y: auto;
@@ -480,10 +491,10 @@ z-index: 10;
 .galpic article:hover img {
 transform: translate(-50%, -50%) rotate(-110deg);
 }
-
+/* 
 h2 {
 font-size: 100%;
-}
+} */
 
 .galpic figure {
 display: flex;
@@ -530,7 +541,7 @@ overflow: auto;
 height:60vh;
 pointer-events: auto;
 }
-.mult::-webkit-scrollbar{
+.mult::-webkit-scrollbar,.multab::-webkit-scrollbar{
 width: 0px;
 }
 .our-team{
