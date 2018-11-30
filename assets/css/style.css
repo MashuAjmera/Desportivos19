@@ -58,6 +58,13 @@
 }
 
 
+.fire, #toggle{
+  transition: all .5s linear;
+  }
+  .fire:hover , #toggle:hover{
+    box-shadow: 0px -2px 4px #fff, 0px -2px 10px #FF3, 0px -10px 20px #F90, 0px -20px 40px #C33;
+   }
+
 #home {
 color: #fffbf1;
 text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
@@ -70,6 +77,11 @@ position: absolute;
 top: 50%;
 left: 500%;
 transform: translateX(-50%) translateY(-50%);
+transition: all .5s linear;
+}
+#home:hover{
+  
+  text-shadow: 0px -2px 4px #fff, 0px -2px 10px #FF3, 0px -10px 20px #F90, 0px -20px 40px #C33;
 }
 
 #home:before,
@@ -113,10 +125,10 @@ display: -ms-flexbox;
 -webkit-box-sizing: border-box;
 box-sizing: border-box;
 }
-.btn-1:hover {
+/* .btn-1:hover {
 -webkit-box-shadow: 0 0 10px 3px hsla(0,0%,100%,.7);
 box-shadow: 0 0 10px 3px hsla(0,0%,100%,.7);
-}
+} */
 
 @media  only screen and (max-width: 991px) {
   /* events */
@@ -679,11 +691,6 @@ cursor: pointer;
 width: 100%;
 background: linear-gradient(#7F2429, transparent), linear-gradient(200deg, #FF7F00, #D4445F, #D06D51);
 }
-
-.fire {
-  color: #f5f5f5;
-  text-shadow: 0px -2px 4px #fff, 0px -2px 10px #FF3, 0px -10px 20px #F90, 0px -20px 40px #C33;
- }
  
  
 /* footer social icons */
@@ -697,9 +704,6 @@ background: linear-gradient(#7F2429, transparent), linear-gradient(200deg, #FF7F
   display: inline;
   margin: 0;
   }
-  
-  
-  /* footer social icons */
   .social-network a.icoFacebook:hover {
   background-color:#3B5998;
   }
