@@ -61,14 +61,14 @@
 #home {
 color: #fffbf1;
 text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
-font-size: 80px;
+font-size: 8vh;
 font-weight: bold;
 text-decoration: none;
 letter-spacing: -3px;
 margin: 0;
 position: absolute;
 top: 50%;
-left: 50%;
+left: 500%;
 transform: translateX(-50%) translateY(-50%);
 }
 
@@ -384,7 +384,7 @@ display: none;
 display: none;
 }
 
-/*gallery*/
+/*sponsors*/
 .Layer_0 {
 position: absolute;
 left: 64px;
