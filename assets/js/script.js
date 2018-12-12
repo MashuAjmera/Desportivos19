@@ -51,11 +51,11 @@ function countfootfall() {
 }
 var value3 = 0;
 function countcolleges() {
-  if (value3 < 200) {
+  if (value3 < 100) {
     value3 += 1;
     document.getElementById('countercolleges').innerHTML = value3+"+";
   }
- setTimeout(countcolleges, 10);
+ setTimeout(countcolleges, 20);
 }
 var value1 = 0;
 function countevent() {
