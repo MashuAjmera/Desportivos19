@@ -19,7 +19,7 @@
 
 <body>
     <div class="container-fluid" style="pointer-events: none;">
-        <nav class="navbar navbar-expand-lg fixed-top" style="pointer-events: auto;">
+        <nav class="navbar navbar-expand-lg fixed-top" style="pointer-events: auto;" id="hideinfo">
             <a class="navbar-brand" href="assets/images/logo.png" data-size="816x1412">
                 <img src="assets/images/logowhite.png" width="40" alt="Desportivos" id="toggle">
             </a>
@@ -1347,7 +1347,7 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar fixed-bottom">
+        <nav class="navbar fixed-bottom" id="footerinfo">
             <a class="nav-link nav-item hover_effect" href="https://www.google.com/calendar/render?action=TEMPLATE&text=Desportivos%2719&details=Annual+Sports+fest+of+LNMIIT%2C+Jaipur&location=LNMIIT%2C+Jaipur&dates=20190125T043000Z%2F20190127T170000Z"
                 style="color: #fff;pointer-events: auto;" target="_blank" title="Save to Calendar"><span id="countdown"
                     class=""></span></a>
@@ -1376,6 +1376,8 @@
     
 $( document ).ready(function() {    
     $('#hometext').hide(0).delay(11500).fadeIn(2000);
+    $('#footerinfo').hide(0).delay(11500).fadeIn(2000);
+    $('#hideinfo').hide(0).delay(11500).fadeIn(2000);
  });
 </script>
 </html>
