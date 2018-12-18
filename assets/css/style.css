@@ -58,6 +58,7 @@
     /* background-color: set in bootstrap.css; */
     overflow: hidden;
     margin: 0;
+    user-select: none;
     }
     
     /* main content */
@@ -473,6 +474,14 @@ transition-delay: 0.2s;
 }
 .btn-2:hover span::before, .btn-2:hover span::after{
 transition-delay: 0s;
+}
+
+/* gallery */
+.imagezoom{
+  transition: all 0.5s ease;
+ }
+.imagezoom:hover{
+  transform: scale(1.2);
 }
 
 /* hide */
