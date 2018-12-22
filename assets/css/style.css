@@ -18,7 +18,7 @@
   }
   .multab{
     overflow: auto;
-    height:60vh;
+    height:55vh;
     pointer-events: auto;
   }
 }
@@ -42,7 +42,7 @@
   }
   .multab{
     overflow: auto;
-    height:60vh;
+    height:55vh;
     pointer-events: none;
   }
 }
@@ -244,7 +244,7 @@ box-sizing: border-box;
 box-shadow: 0 0 10px 3px hsla(0,0%,100%,.7);
 } */
 
-@media  only screen and (max-width: 991px) {
+@media  only screen and (max-width: 991.5px) {
   /* events */
 /*Time to apply widths for accordian to work
 height of image = 320px
@@ -254,6 +254,14 @@ height of un-hovered image = 20px - you can set this to anything
 so total container height = 320 + 20*11 = 540px;
 default width = 400/5 = 45px;
 */
+
+.nav-item{
+  margin: auto;
+}
+.navbar-collapse{
+  background-color: #000;
+  height: 100vh;
+}
 
 .accordian {
 width: 80vw; height: 40vw+220px;
@@ -320,7 +328,7 @@ padding: 20px;
 font-size: 16px;
 }
 }
-@media  only screen and (min-width: 991px) {
+@media  only screen and (min-width: 991.5px) {
 
   /* events */
 
@@ -562,7 +570,7 @@ padding-right: calc(var(--size) * .5);
 overflow-X: hidden;
 hyphens: auto;
 overflow-y: auto;
-height: 60vh;
+height: 55vh;
 pointer-events: auto;
 }
 .galpic::-webkit-scrollbar{
@@ -666,7 +674,7 @@ font-weight: 200;
 .mult{
 overflow-y: auto;
 overflow-x: hidden;
-height:60vh;
+height:55vh;
 pointer-events: auto;
 }
 .mult::-webkit-scrollbar,.multab::-webkit-scrollbar{
@@ -874,3 +882,50 @@ background: linear-gradient(#7F2429, transparent), linear-gradient(200deg, #FF7F
   -ms-transition: all 0.8s;
   transition: all 0.8s;
   }
+
+
+
+.register {
+  position: fixed;
+  top: 50%;
+  right:0px;
+}
+
+.register ul {
+padding: 0px;
+-webkit-transform: translate(270px, 0);
+-moz-transform: translate(270px, 0);
+-ms-transform: translate(270px, 0);
+-o-transform: translate(270px, 0);
+transform: translate(270px, 0);
+}
+
+.register ul li {
+  display: block;
+  margin: 3px;
+  background: rgba(	255, 127, 0, 0.36);
+  width: 300px;
+  text-align: left;
+  padding: 5px;
+  -webkit-border-radius: 30px 0 0 30px;
+  -moz-border-radius: 30px 0 0 30px;
+  border-radius: 30px 0 0 30px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.register ul li:hover {
+-webkit-transform: translate(-110px, 0);
+-moz-transform: translate(-110px, 0);
+-ms-transform: translate(-110px, 0);
+-o-transform: translate(-110px, 0);
+transform: translate(-110px, 0);
+background: rgba(	255, 127, 0, 0.36);
+}
+
+.register ul li:hover a {
+color: #fff;
+}
