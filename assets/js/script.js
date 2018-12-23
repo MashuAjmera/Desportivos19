@@ -17,7 +17,7 @@ function openp(pglnk) {
     document.getElementById("sponsors").style.display = "none";
     document.getElementById("contact").style.display = "none";
     document.getElementById("reach").style.display = "none";
-    document.getElementById("containerinfo").style.display = "none";
+    // document.getElementById("containerinfo").style.display = "none";
     document.getElementById(pglnk).style.display = "block";
 }
 
@@ -66,3 +66,8 @@ function countevent() {
   }
 setTimeout(countevent, 100);
 }
+
+setTimeout(function(){
+    document.getElementById('loader').style.display="none";
+    document.getElementById('webp').style.display="block";
+},4000);

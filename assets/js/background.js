@@ -82,7 +82,7 @@
                 pool.push( particles.shift() );
 
             particle = pool.length ? pool.pop() : new Particle();
-            particle.init( x, y, random( 5, 30 ) );
+            particle.init( x, y, random( 5, 40 ) );
 
             particle.wander = random( 0.5, 2.0 );
             particle.color = random( COLOURS );
@@ -125,7 +125,7 @@
 
             for ( i = 0, n = demo.touches.length; i < n; i++ ) {
 
-                touch = demo.touches[i], max = random( 1, 4 );
+                touch = demo.touches[i], max = random( 1, 2 );
                 for ( j = 0; j < max; j++ ) {
                   demo.spawn( touch.x, touch.y );
                 }
