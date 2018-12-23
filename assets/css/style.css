@@ -884,7 +884,7 @@ background: linear-gradient(#7F2429, transparent), linear-gradient(200deg, #FF7F
   }
 
 
-
+/* vector */
 .register {
   position: fixed;
   top: 50%;
@@ -903,7 +903,7 @@ transform: translate(270px, 0);
 .register ul li {
   display: block;
   margin: 3px;
-  background: rgba(	255, 127, 0, 0.36);
+  background: rgba(	255, 127, 0, 0.2);
   width: 300px;
   text-align: left;
   padding: 5px;
@@ -923,7 +923,7 @@ transform: translate(270px, 0);
 -ms-transform: translate(-110px, 0);
 -o-transform: translate(-110px, 0);
 transform: translate(-110px, 0);
-background: rgba(	255, 127, 0, 0.36);
+background: rgba(	255, 127, 0, 0.2);
 }
 
 .register ul li:hover a {

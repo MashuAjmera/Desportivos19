@@ -82,7 +82,7 @@
                 pool.push( particles.shift() );
 
             particle = pool.length ? pool.pop() : new Particle();
-            particle.init( x, y, random( 5, 40 ) );
+            particle.init( x, y, random( 5, 30 ) );
 
             particle.wander = random( 0.5, 2.0 );
             particle.color = random( COLOURS );
