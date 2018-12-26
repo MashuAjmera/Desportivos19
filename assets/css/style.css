@@ -7,10 +7,12 @@
   .social-circle li i {
     line-height:30px;
   }
-  .display-1 {
+  .display-3 {
     font-size: 3rem;
     font-weight: 300;
-    line-height: 1.2;
+  }
+  .our-team .post{
+    display: none;
   }
   .lead {
     font-size: 1rem;
@@ -34,6 +36,9 @@
     width: 50px;
     height: 50px;
     font-size:20px;
+  }
+  .our-team .post{
+    display: block;
   }
   .social-circle li i {
     margin:0;
@@ -296,10 +301,10 @@ box-shadow: 0 0 10px 3px hsla(0,0%,100%,.7);
   /* events */
 /*Time to apply widths for accordian to work
 height of image = 320px
-total images = 12
+total images = 13
 so height of hovered image = 320px
 height of un-hovered image = 20px - you can set this to anything
-so total container height = 320 + 20*11 = 540px;
+so total container height = 320 + 20*12 = 560px;
 default width = 400/5 = 45px;
 */
 
@@ -410,7 +415,7 @@ instead of falling down/flickering during hovers.*/
 .accordian li {
 position: relative;
 display: block;
-width: 6.51vw;
+width: 6vw;
 float: left;
 
 border-left: 1px solid #888;
@@ -431,7 +436,7 @@ see the basic accordian*/
 .accordian ul:hover li {width: 40px;}
 /*Lets apply hover effects now*/
 /*The LI hover style should override the UL hover style*/
-.accordian ul li:hover {width: 640px;}
+.accordian ul li:hover {width: 560px;}
 
 
 .accordian li img {
@@ -812,7 +817,6 @@ transition: all 0.5s ease 0s;
 }
 .our-team:hover .title{color: #D4445F;}
 .our-team .post{
-display: block;
 font-size: 14px;
 }
 
