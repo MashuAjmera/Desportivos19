@@ -11,9 +11,6 @@
     font-size: 3rem;
     font-weight: 300;
   }
-  .our-team .post{
-    display: none;
-  }
   .lead {
     font-size: 1rem;
     font-weight: 300;
@@ -308,6 +305,9 @@ so total container height = 320 + 20*12 = 560px;
 default width = 400/5 = 45px;
 */
 
+.our-team .post{
+  display: none;
+}
 .nav-item{
   margin: auto;
 }
@@ -317,61 +317,43 @@ default width = 400/5 = 45px;
 }
 
 .accordian {
-width: 80vw; height: 40vw+220px;
-overflow: hidden;
-/*Time for some styling*/
-/* margin: 100px auto; */
-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
--webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
--moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+  overflow-x: hidden;
+  height: 55vh;
 }
-
+.accordian::-webkit-scrollbar{
+  width: 0px;
+}
 /*A small hack to prevent flickering on some browsers*/
 .accordian ul {
-height: 100vh;
-/*This will give ample space to the last item to move
-instead of falling down/flickering during hovers.*/
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  list-style-type: none;
 }
 
 .accordian li {
-position: relative;
-display: block;
-height: 45px;
-float: left;
-
-border-left: 1px solid #888;
-
-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
--webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
--moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-
-/*Transitions to give animation effect*/
-transition: all 0.5s;
--webkit-transition: all 0.5s;
--moz-transition: all 0.5s;
-/*If you hover on the images now you should be able to
-see the basic accordian*/
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 40%;
+  position: relative;
+  border: 1px solid hsla(0,0%,100%,.4);
+  border-radius: 17px;
+  margin: 1% 2% 1% 2%;
+  -webkit-transition: all .5s linear;
+  -o-transition: all linear .5s;
+  transition: all .5s linear;
 }
 
-/*Reduce with of un-hovered elements*/
-.accordian ul:hover li {height: 20px;}
-/*Lets apply hover effects now*/
-/*The LI hover style should override the UL hover style*/
-.accordian ul li:hover {height: 40vw;}
-
-
 .accordian li img {
-display: block;
+display: none;
 }
 
 /*Image title styles*/
 .image_title {
-background: rgba(0, 0, 0, 0.5);
-position: absolute;
-left: 0; bottom: 0;
-width: 80vw;
-height: 45px;
-
+color: #fff;
 }
 .image_title a {
 display: block;

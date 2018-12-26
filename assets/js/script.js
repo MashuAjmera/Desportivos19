@@ -70,4 +70,4 @@ setTimeout(countevent, 100);
 setTimeout(function(){
     document.getElementById('loader').style.display="none";
     document.getElementById('webp').style.display="block";
-},4000);
+},000);
