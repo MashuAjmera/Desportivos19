@@ -925,3 +925,13 @@ background: linear-gradient(#7F2429, transparent), linear-gradient(200deg, #FF7F
 #webp{
   display: none;
 }
+#myVideo{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  box-sizing: border-box;
+  z-index: -100;
+  min-height: 100%;
+  opacity: 0.6;
+}
