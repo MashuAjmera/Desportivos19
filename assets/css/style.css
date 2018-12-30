@@ -869,6 +869,8 @@ background: linear-gradient(#7F2429, transparent), linear-gradient(200deg, #FF7F
   bottom: 0;
   min-width: 100%; 
   box-sizing: border-box;
+  width: auto; 
+  height: auto;
   z-index: -100;
   min-height: 100%;
   opacity: 0.6;
