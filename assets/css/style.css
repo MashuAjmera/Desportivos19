@@ -461,7 +461,7 @@ display: inline-block;
 position: relative;
 background: none;
 border: none;
-color: rgba(255, 255, 255, 0.7) !important;
+color: rgba(255, 255, 255, 1) !important;
 margin: 5px 5px;
 }
 span{

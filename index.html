@@ -21,7 +21,7 @@
     <!-- <img src="assets/images/loader.gif" alt="Desportivo's Page Loading" id="loader"> -->
     <video src="assets\images\loader2.mp4" autoplay muted loop id="loader"></video>
     <div class="container-fluid" style="pointer-events: none;" id="webp">
-        <nav class="navbar navbar-expand-lg fixed-top" style="pointer-events: auto;" id="hideinfo">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="pointer-events: auto;" id="hideinfo">
             <a class="navbar-brand" href="assets/images/logo.png" data-size="816x1412">
                 <img src="assets/images/logowhite.png" width="40" alt="Desportivos" id="toggle">
             </a>
@@ -32,25 +32,25 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link btn-2 fire" href="#home" onclick="openp('home')"><span>Home</span></a>
+                        <a class="nav-link btn-2 fire" href="#home" onclick="openp('home')" data-toggle="collapse" data-target=".navbar-collapse"><span>Home</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn-2 fire" href="#about" onclick="openp('about');countevent();countcolleges();countfootfall();"><span>About</span></a>
+                        <a class="nav-link btn-2 fire" href="#about" onclick="openp('about');countevent();countcolleges();countfootfall();" data-toggle="collapse" data-target=".navbar-collapse"><span>About</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn-2 fire" href="#events" onclick="openp('events')"><span>Events</span></a>
+                        <a class="nav-link btn-2 fire" href="#events" onclick="openp('events')" data-toggle="collapse" data-target=".navbar-collapse"><span>Events</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn-2 fire" href="#gallery" onclick="openp('gallery')"><span>Gallery</span></a>
+                        <a class="nav-link btn-2 fire" href="#gallery" onclick="openp('gallery')" data-toggle="collapse" data-target=".navbar-collapse"><span>Gallery</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn-2 fire" href="#sponsors" onclick="openp('sponsors')"><span>Sponsors</span></a>
+                        <a class="nav-link btn-2 fire" href="#sponsors" onclick="openp('sponsors')" data-toggle="collapse" data-target=".navbar-collapse"><span>Sponsors</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn-2 fire" href="#contact" onclick="openp('contact')"><span>Contact</span></a>
+                        <a class="nav-link btn-2 fire" href="#contact" onclick="openp('contact')" data-toggle="collapse" data-target=".navbar-collapse"><span>Contact</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn-2 fire" href="#reach" onclick="openp('reach')"><span>Reach</span></a>
+                        <a class="nav-link btn-2 fire" href="#reach" onclick="openp('reach')" data-toggle="collapse" data-target=".navbar-collapse"><span>Reach</span></a>
                     </li>
                 </ul>
             </div>
@@ -788,7 +788,6 @@
                                 <img class="d-block imagezoom w-100" src="assets/images/gallery/event-1.jpg" alt="First slide">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Image 0</h5>
-                                    <p>lorem ipsum</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
@@ -1478,7 +1477,7 @@
                 style="color: #fff;pointer-events: auto;" target="_blank" title="Save to Calendar"><span id="countdown"
                     class=""></span>
             </a>
-            <button class="btn btn-lg fire" style="pointer-events:auto;background: linear-gradient(40deg,#FF7F00,#D06D51,#D4445F,#7F2429);">
+            <button class="btn btn-lg fire" style="pointer-events:auto;background: linear-gradient(40deg,#FF7F00,#D06D51,#D4445F,#7F2429);opacity: 0.7;">
                 <a href="https://desportivos1.typeform.com/to/l5Ktxd" target="_blank" style="color: #fff;text-decoration: none;">Pre-Register</a>
             </button>
             <ul class="social-network social-circle" style="pointer-events: auto;">
@@ -1506,7 +1505,7 @@
 <script>
     
 $( document ).ready(function() {    
-    $('#hometext').hide(0).delay(4000).fadeIn(3000);
+    $('#hometext').hide(0).delay(4300).fadeIn(3000);
     $('#footerinfo').hide(0).delay(4500).fadeIn(3000);
     $('#hideinfo').hide(0).delay(4500).fadeIn(3000);
  });
