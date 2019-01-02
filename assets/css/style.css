@@ -76,7 +76,7 @@
     
 /* home */
 @keyframes tipsy {
-0 {
+0% {
   transform: translateX(-50%) translateY(-50%) rotate(0deg);
 }
 100% {
@@ -569,12 +569,12 @@ z-index: 1;
 .galpic article {margin:0;padding:0;border: 0 none; position: relative;}
 .galpic {
 	--Nhexa: 4;
-	--gap: 2vw;
-	--size: calc(calc(100vw / var(--Nhexa)) - var(--gap));
+	/* --gap: 2vw; */
+	--size: calc(calc(100vw / var(--Nhexa)) - 2vw);
 }
 @media only screen and (max-width: 600px) {
 	.galpic {--Nhexa: 2;
-	--size: calc(calc(100vw / var(--Nhexa)) - 5 * var(--gap));}
+	--size: calc(calc(100vw / var(--Nhexa)) - 10vw);}
 	.galpic {margin-right: calc(var(--size) * .3);}
 }
 .galpic {
@@ -590,13 +590,13 @@ z-index: 1;
   width: calc(var(--size) * calc(var(--Nhexa) - 1));
 	display: grid;
 	grid-template-columns: repeat(var(--Nhexa), 1fr);
-	grid-gap: var(--gap);
+	grid-gap: 2vw;
 }
 .galpic article {
 	background: cadetblue;
   width: var(--size); 
   height: calc(var(--size) / 1.1111111);
-	clip-path: url(#hexagono);
+	/* clip-path: url(#hexagono); */
   clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
   margin-right: calc(var(--size) / 2);
 	color: #fff;
@@ -609,7 +609,7 @@ z-index: 1;
 	width: 25%;
 	height: 100%;
 	clip-path: polygon(0% 0%, 100% 0%, 0% 50%, 100% 100%, 0% 100%);
-	shape-outside: polygon(0% 0%, 100% 0%, 0% 50%, 100% 100%, 0% 100%);
+	/* shape-outside: polygon(0% 0%, 100% 0%, 0% 50%, 100% 100%, 0% 100%); */
 }
 .galpic img {
   width: var(--size);
@@ -620,7 +620,7 @@ z-index: 1;
 	transform: translate(-50%, -50%);
 	transform-origin: 0% 50%;
 	transition: .75s;
-	clip-path: url(#hexagono);
+	/* clip-path: url(#hexagono); */
 	clip-path: inherit;
 	z-index:  10;
 }
@@ -773,7 +773,7 @@ margin: 0 auto;
 }
 
 .hover_effect:hover {
-color: linear-gradient(#FF7F00, transparent), linear-gradient(200deg, #7F2429, #D4445F, #D06D51);
+color: linear-gradient(200deg, #FF7F00,#7F2429, #D4445F, #D06D51);
 -webkit-transition: all 1s ease;
 -moz-transition: all 1s ease;
 -ms-transition: all 1s ease;
