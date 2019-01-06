@@ -35,8 +35,10 @@ function showRemaining() {
         return;
     }
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-
-    document.getElementById('countdown').innerHTML = days + ' days to go';
+    var hours = Math.floor((distance%(24*60*60*1000)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance%(60*60*1000))/ (1000 * 60));
+    var seconds = Math.floor((distance%(60*1000)) / (1000));
+    document.getElementById('countdown').innerHTML = days + 'd ' + hours + 'h ' +minutes + 'm '+seconds + 's ';
 }
 timer = setInterval(showRemaining, 1000);
 
