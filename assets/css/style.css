@@ -906,3 +906,10 @@ background: linear-gradient(#7F2429, transparent), linear-gradient(200deg, #FF7F
   padding-left: 5vw;
   padding-right: 5vw;
 }
+
+#loader{
+  display: block;
+}
+#webp{
+  display: none;
+}
