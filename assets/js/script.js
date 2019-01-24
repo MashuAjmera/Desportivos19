@@ -21,7 +21,7 @@ function openp(pglnk) {
     document.getElementById(pglnk).style.display = "block";
 }
 
-var end = new Date('01/25/2019');
+var end = new Date("Jan 25, 2019 10:00:00");
 var _day = 1000 * 60 * 60 * 24;
 var timer;
 function showRemaining() {
@@ -30,7 +30,7 @@ function showRemaining() {
     if (distance < 0) {
 
         clearInterval(timer);
-        document.getElementById('countdown').innerHTML = 'You are here';
+        document.getElementById('countdown').innerHTML = 'We are here';
 
         return;
     }
@@ -38,7 +38,7 @@ function showRemaining() {
     var hours = Math.floor((distance%(24*60*60*1000)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance%(60*60*1000))/ (1000 * 60));
     var seconds = Math.floor((distance%(60*1000)) / (1000));
-    document.getElementById('countdown').innerHTML = days + 'd ' + hours + 'h ' +minutes + 'm '+seconds + 's ';
+    document.getElementById('countdown').innerHTML = hours + 'h ' +minutes + 'm '+seconds + 's';
 }
 timer = setInterval(showRemaining, 1000);
 
