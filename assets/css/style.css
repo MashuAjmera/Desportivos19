@@ -594,7 +594,7 @@ z-index: 1;
 	grid-gap: var(--gap);
 }
 .galpic article {
-	background: cadetblue;
+	background: #D4445F;
   width: var(--size); 
   height: calc(var(--size) / 1.1111111);
 	/* clip-path: url(#hexagono); */
