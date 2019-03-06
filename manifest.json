@@ -3,14 +3,14 @@
     "name" : "Desportivos 19",
     "scope" : "/",
     "display" : "standalone",
-    "start_url" : "http://desportivos.netlify.com/",
+    "start_url" : "/",
     "short_name" : "Desportivos",
     "theme_color" : "#ffffff",
     "description" : "Desportivos'19 | 25-27 Jan",
     "orientation" : "any",
     "background_color" : "transparent",
-    "related_applications" : "",
-    "prefer_related_applications" : "false",
+    "related_applications" : [],
+    "prefer_related_applications" : false,
     "generated" : "true",
     "icons" : [
         {
